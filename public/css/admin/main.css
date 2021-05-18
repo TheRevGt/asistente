@@ -1,0 +1,43 @@
+.image_area {
+    position: relative;
+  }
+
+  img {
+        display: block;
+        max-width: 100%;
+  }
+
+  .preview {
+        overflow: hidden;
+        width: 160px; 
+        height: 160px;
+        margin: 10px;
+        border: 1px solid red;
+  }
+  .preview img {
+      width: auto;
+      mix-blend-mode: multiply;
+  }
+.cropper-container{
+      width: auto !important;
+}
+  .modal-lg{
+        max-width: 950px !important;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+    width: 90%;
+  }
+
+  .image_area:hover .overlay {
+    height: 50%;
+    cursor: pointer;
+  }
