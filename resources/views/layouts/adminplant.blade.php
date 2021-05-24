@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="@yield('r')img/icono.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="@yield('r')css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -80,7 +81,7 @@
               </ul>
               <hr>
 
-              <div class="dropdown text-end" >
+              <div class="dropdown text-end p-2" >
                 <a href="" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="logout" data-bs-toggle="dropdown" aria-expanded="false">
                   <img src="{{ Auth::user()->avatar }}" alt="mdo" width="32" height="32" class="rounded-circle me-2">
                   <strong> {{ Auth::user()->nombre }}</strong>

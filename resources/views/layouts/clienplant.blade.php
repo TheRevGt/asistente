@@ -8,6 +8,7 @@
     <link href="@yield('r')css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="@yield('r')js/bootstrap.bundle.min.js"></script>
     <script src="@yield('r')js/ajax.js"></script>
+    <link rel="icon" href="@yield('r')img/icono.svg">
     @yield('recursos')
 </head>
 <body>

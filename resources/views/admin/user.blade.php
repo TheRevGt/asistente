@@ -20,7 +20,7 @@
 
 @section('contenido')
 <div class="col-8 m-auto justify-content-md-center">
-<form class="row text-center" action="{{route('admin.users')}}" method="POST">
+<form class="row text-center m-2" action="{{route('admin.users')}}" method="POST">
     @csrf
       <div class="text-center p-3">
           <label for="upload_image">

@@ -9,7 +9,7 @@
         max-width: 200px;
         min-width: auto;
     }
-    .car-image{
+    .card-image{
         cursor: url("img/plus_cursor.png") 25 25, pointer;
     }
 </style>
@@ -27,6 +27,11 @@
         </form>
     </div>
 </nav>
+<div class="vh-100 load" id="load" tabindex="-1">
+    <div class="spinner-border text-primary position-absolute top-50 start-50" role="status">
+        <span class="visually-hidden">Cargando...</span>
+    </div>
+</div>
 <h2>Blusas</h2>
     <div class="row row-cols-auto">
         @foreach ($items->all() as $item)
@@ -34,7 +39,7 @@
         <div class="col-auto">
             <div class="card shadow-sm">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-light rounded-5">
-                    <img class="car-image" src="{{$item->imagen}}">
+                    <img class="card-image" src="{{$item->imagen}}">
                 </div>
                 <div class="card-body bg-transparent">
                     <h5 class="card-title">{{$item->nombre}}</h5>
@@ -61,7 +66,7 @@
         <div class="col-auto">
             <div class="card shadow-sm">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-light rounded-5">
-                    <img class="car-image" src="{{$item->imagen}}">
+                    <img class="card-image" src="{{$item->imagen}}">
                 </div>
                 <div class="card-body bg-transparent">
                     <h5 class="card-title">{{$item->nombre}}</h5>
@@ -88,7 +93,7 @@
         <div class="col-auto">
             <div class="card shadow-sm">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-light rounded-5">
-                    <img class="car-image" src="{{$item->imagen}}">
+                    <img class="card-image" src="{{$item->imagen}}">
                 </div>
                 <div class="card-body bg-transparent">
                     <h5 class="card-title">{{$item->nombre}}</h5>
@@ -115,7 +120,7 @@
         <div class="col-auto">
             <div class="card shadow-sm">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-light rounded-5">
-                    <img class="car-image" src="{{$item->imagen}}">
+                    <img class="card-image" src="{{$item->imagen}}">
                 </div>
                 <div class="card-body bg-transparent">
                     <h5 class="card-title">{{$item->nombre}}</h5>
@@ -134,4 +139,16 @@
         @endif
         @endforeach
     </div>
+@endsection
+@section('js')
+<script>
+    var elements = document.querySelectorAll( '.card-image' );
+    Intense( elements );
+    
+    window.onload = function(){
+    var cont= document.getElementById("load");
+    cont.style.visibility = "hidden";
+    $( ".load" ).removeClass( "vh-100" )
+    }
+</script>
 @endsection

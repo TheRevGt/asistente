@@ -12,10 +12,20 @@
         max-width: 200px;
         min-width: auto;
     }
-</style>    
+    .car-image{
+        cursor: url("../img/plus_cursor.png") 25 25, pointer;
+    }
+</style>
+<script src="../js/intense.js"></script>
 @endsection
     
 @section('contenido')
+<div class="vh-100 load" id="load" tabindex="-1">
+    <div class="spinner-border text-primary position-absolute top-50 start-50" role="status">
+        <span class="visually-hidden">Cargando...</span>
+    </div>
+</div>
+
 <div class="row row-cols-auto">
     @foreach ($items as $item)
     @if ($item->id != null)
@@ -43,5 +53,19 @@
     @endif
     
     @endforeach
-    </div>
+</div>
+@endsection
+
+@section('js')
+<script>
+    var elements = document.querySelectorAll( '.car-image' );
+    Intense( elements );
+    
+    window.onload = function(){
+    var cont= document.getElementById("load");
+    cont.style.visibility = "hidden";
+    $( ".load" ).removeClass( "vh-100" )
+    }
+</script>
+
 @endsection

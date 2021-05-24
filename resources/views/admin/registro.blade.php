@@ -13,7 +13,7 @@
 @section('contenido')
 
 <!--Modal de editor de imagen-->
-  <form class="row text-center" action="{{route('admin.store')}}" method="POST">
+  <form class="row text-center m-5" action="{{route('admin.store')}}" method="POST">
     @csrf
     <div class="text-center p-3">
           <label for="upload_image">

@@ -9,6 +9,7 @@
     <script src="@yield('r')js/ajax.js"></script>
     @yield('recurso')
     <title>@yield('titulo')</title>
+    <link rel="icon" href="@yield('r')img/icono.svg">
 </head>
 <body>
 <main>
