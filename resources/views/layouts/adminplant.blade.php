@@ -101,14 +101,14 @@
           </div>
         </nav>
         <main>
-        <div class="container-fluid">
+        <div class="container-fluid pb-5">
             @yield('contenido')
         </div>
         </main>
     </div>
 
     <!--footer de la plantilla-->
-    <footer class="footer mt-auto py-3 bg-lite fixed-bottom">
+    <footer class="footer mt-auto py-4 bg-lite fixed-bottom">
         <div class="container">
             <span class="text-muted"> Derechos reservados </span>
     </footer>

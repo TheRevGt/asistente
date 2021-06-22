@@ -44,7 +44,7 @@
                 <div class="card-body bg-transparent">
                     <h5 class="card-title">{{$item->nombre}}</h5>
                     <p class="card-text"><small class="text-muted">
-                        <b>Estilo:</b> {{$item->estilo}}
+                        <b>Estilo:</b> {{$item->estilo}}<br>
                         <b>Precio:</b> Q {{$item->precio}}
                     </small></p>
                     <div class="d-flex justify-content-end">
@@ -71,7 +71,7 @@
                 <div class="card-body bg-transparent">
                     <h5 class="card-title">{{$item->nombre}}</h5>
                     <p class="card-text"><small class="text-muted">
-                        <b>Estilo:</b> {{$item->estilo}}
+                        <b>Estilo:</b> {{$item->estilo}}<br>
                         <b>Precio:</b> Q {{$item->precio}}
                     </small></p>
                     <div class="d-flex justify-content-end">
@@ -98,7 +98,7 @@
                 <div class="card-body bg-transparent">
                     <h5 class="card-title">{{$item->nombre}}</h5>
                     <p class="card-text"><small class="text-muted">
-                        <b>Estilo:</b> {{$item->estilo}}
+                        <b>Estilo:</b> {{$item->estilo}}<br>
                         <b>Precio:</b> Q {{$item->precio}}
                     </small></p>
                     <div class="d-flex justify-content-end">
@@ -125,7 +125,7 @@
                 <div class="card-body bg-transparent">
                     <h5 class="card-title">{{$item->nombre}}</h5>
                     <p class="card-text"><small class="text-muted">
-                        <b>Estilo:</b> {{$item->estilo}}
+                        <b>Estilo:</b> {{$item->estilo}}<br>
                         <b>Precio:</b> Q {{$item->precio}}
                     </small></p>
                     <div class="d-flex justify-content-end">

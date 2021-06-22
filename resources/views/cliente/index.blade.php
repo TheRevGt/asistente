@@ -23,7 +23,7 @@
         <div class="position-absolute top-50 start-50 translate-middle overflow-hidden text-center">
             <div class="col-md-5 p-lg-5 mx-auto my-5">
                 <h1 class="display-4 fw-normal">Bienvenido a tu asistente</h1>
-                <p class="lead fw-normal">Te ayudamos a seleccionar los complemntos de tu ropa de mejor manera.</p>
+                <p class="lead fw-normal">Te ayudamos a seleccionar los complementos para el traje típico que necesitas.</p>
             </div>
             <div class="carousel-dark">
                 <button class="carousel-control-next" type="button" id="vamos">
